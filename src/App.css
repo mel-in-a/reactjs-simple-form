@@ -1,1 +1,45 @@
 /* Other rules */
+/* Other rules */
+:root{
+    --color-purple: rgb(92, 72, 211);
+    --color-light-grey:  rgb(236, 236, 236);;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: var(--color-light-grey);
+
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    border-bottom: 1px solid #5c48d3;
+    /* background-color:blue; */
+  }
+  .header .logo {
+    margin: 0 30px;
+    color: #5c48d3;
+  }
+  .header .title {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  /* FOOTER */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    background-color: rgb(236, 236, 236);
+    color: black;
+    font-size: 12px;
+  }
