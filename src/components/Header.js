@@ -7,7 +7,7 @@ const Header = () => {
       <FontAwesomeIcon icon="space-shuttle" size="2x"/>
       </div>
 
-      <div className="title">Titre de l'app</div>
+      <div className="title">Simple form</div>
     </div>
   );
 };
