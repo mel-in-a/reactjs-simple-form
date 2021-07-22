@@ -67,6 +67,15 @@ h1, h2 {
  
  }
 
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+display: none !important;
+}
+
+
  label {
   clear: both;
   display: block;
@@ -98,7 +107,8 @@ input {
   padding: 10px;
   border-radius: 5px;
   color: white;
-  font-size:1.2rem
+  font-size:1.2rem;
+  margin-bottom: 30px;
 }
 
 
@@ -124,7 +134,7 @@ input {
   border-radius: 5px;
   color: white;
   font-size:1.2rem;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 
