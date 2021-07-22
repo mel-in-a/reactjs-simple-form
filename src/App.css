@@ -126,6 +126,10 @@ input {
   margin: 20px 0;
 }
 
+
+.red-border {
+  border: 1px red solid;
+}
 .edit {
   display: block;
   background-color: var(--color-purple);

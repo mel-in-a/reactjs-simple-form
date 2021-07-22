@@ -66,6 +66,7 @@ function App() {
               <div className="spacer"></div>
               <label htmlFor="password">Password</label>
               <input
+              className={result ? 'red-border': ''}
                 type="password"
                 name="password"
                 value={password}
@@ -78,6 +79,7 @@ function App() {
               <div className="spacer"></div>
               <label htmlFor="password2">Confirm your password</label>
               <input
+                 className={result ? 'red-border': ''}
                 type="password"
                 name="password2"
                 value={password2}
