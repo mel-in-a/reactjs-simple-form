@@ -15,6 +15,7 @@ function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [password2, setPassword2] = useState("");
+  const [showForm, setShowForm] = useState(true);
 
   const[result, setResult] = useState("");
 
@@ -24,7 +25,7 @@ function App() {
     event.preventDefault();
 
     // eslint-disable-next-line no-unused-expressions
-    password !== password2 ? setResult(<div className="alert">Les mots de passe doivent être identiques</div>) : '';
+    password !== password2 ? setResult(<div className="alert">Les mots de passe doivent être identiques</div>) : setShowForm = false;
   };
 
   return (
@@ -33,7 +34,8 @@ function App() {
       <div className="container">
         <div className="mini-container">
           <h2>Create account</h2>
-          <div className="form">
+
+          <div className="form" style={showForm ? "visibility:visible": "visibility:hidden"}>
           <form onSubmit={handleSubmit}>
             <label htmlFor="name">Name</label>
             <input
